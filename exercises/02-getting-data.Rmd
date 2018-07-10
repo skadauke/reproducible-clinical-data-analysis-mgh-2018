@@ -1,0 +1,45 @@
+---
+title: "Getting Data"
+output: html_notebook
+---
+
+## Your Turn #1: Importing a CSV file
+
+If you have not yet done so, save the file "esr_data.csv" which you received by e-mail to the same place where this file is stored (e.g. on the Desktop).
+
+To the following code chunk, add a line of code that accomplishes the following:
+
+1. Loads the CSV file "esr_data.csv"
+2. Stores the resulting data frame in an object named "esr" (without the quotes)
+
+(Hint: this is very similar to what's on the slide titled "read_csv()")
+
+```{r}
+library("tidyverse")
+
+
+```
+
+Remember that in order to run a code chunk, you need to click on the little green triangle at the upper right corner of the code chunk.
+
+### Viewing a data frame in RStudio
+
+One thing that Excel does well is to provide an interactive visual representation of the data, allowing you to sort and filter it. RStudio actually does this well, also.
+
+Look on the right at the *Environment* pane (you might have to click on the "Environment" tab) and find the entry *esr*. This is the data frame you just created. 
+
+On the far right in this row, you will spot a symbol that looks like a small table. Click on it to make the Table Viewer appear.
+
+*Pair up* with your group mates and answer the following questions:
+
+1. How many rows are in the data frame? How many columns?
+
+2. What do you think the column titled *CollAge* means?
+
+3. Go ahead and try to edit one of the values in this viewer. You will find that you can't. It would have been easy for the RStudio programmers to allow editing of specific values, but they decided not to add that feature. Why do you think this was designed that way?
+
+4. Can you think if an easy way to confirm that all samples were collected in between *1-1-2017* and *12-31-2017*?
+
+5. Can you figure out, without writing any R code, how many of the rows come from *male* patients?
+
+
